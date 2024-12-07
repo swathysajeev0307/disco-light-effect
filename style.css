@@ -1,0 +1,83 @@
+/*COPYRIGHT (C) 2024 - SWATHYMOL SAJEEV | GNU General Public License v3.0
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, 
+either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.2s ease;
+    background-color: aqua;
+}
+
+.container{
+    background-color: #333;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light{
+    background-color: #fff;
+    border-radius: 100%;
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all 0.2s ease;
+    margin: 0.5rem;
+}
+
+.light.active{
+    background-color: var(--light-color);
+    box-shadow: 0px 0px 20px 5px var(--light-color);
+}
+
+.light.Light1{
+    --light-color: #00FFFC;
+}
+
+.light.Light2{
+    --light-color: #FC00FF;
+}
+
+.light.Light3{
+    --light-color: #fffc00;
+}
+
+.light.Light4{
+    --light-color: rgb(19, 240, 19);
+}
+
+.light.Light5 {
+    --light-color: orange;
+}
+
+.light.Light6{
+    --light-color: purple;
+}
+
+.footer {
+    font-family: sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+}
